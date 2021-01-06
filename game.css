@@ -1,0 +1,17 @@
+.tavli-position {
+    background: brown;
+    color: white;
+    height:3rem;
+}
+
+
+.poulia-position {
+    background: burlywood;
+    color: black;
+    width: 3rem;
+}
+
+#board{
+    border-collapse:separate;
+    border-spacing:0 20px;
+}

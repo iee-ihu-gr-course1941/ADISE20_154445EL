@@ -1,0 +1,37 @@
+-----------------------------------------------------
+CREATE TABLE feuga.users (
+	name varchar(100) NOT NULL,
+	password varchar(100) NOT NULL,
+	id BIGINT UNSIGNED auto_increment NOT NULL,
+    logged_in BOOL DEFAULT false NULL,
+	CONSTRAINT users_PK PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
+
+
+-------------------------------------------
+
+CREATE TABLE feuga.user_poulia (
+	user_id BIGINT UNSIGNED NULL,
+	board_position BIGINT UNSIGNED NULL,
+	number_poulia BIGINT UNSIGNED NULL
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
+
+-----------------------------------------------
+
+CREATE TABLE feuga.board (
+	id BIGINT UNSIGNED auto_increment NOT NULL,
+	user_white BIGINT UNSIGNED NULL,
+	user_black BIGINT UNSIGNED NULL,
+	CONSTRAINT Board_PK PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
+
+-----------------------------------------------

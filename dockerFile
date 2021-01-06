@@ -1,0 +1,1 @@
+docker run --network=host --name mysql-php-5 -e MYSQL_ROOT_PASSWORD=elena2020 -d mysql:latest
